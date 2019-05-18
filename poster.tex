@@ -1,0 +1,166 @@
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+ 
+\documentclass{article} 
+
+%%% PACKAGES
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[letterpaper,top=0.65in,bottom=0.7in,left=0.75in,right=0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikzrput}
+\usepackage{lipsum}
+\usepackage{psvectorian}
+\usepackage{pgfornament}
+\usepackage{fontspec} \setmainfont{Garamond}
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+% \usepackage{background}
+\usetikzlibrary{calc}
+\pagestyle{empty}
+\parindent=0pt
+
+
+\def\fontASize{48}
+\newcommand{\fontA}{\fontsize{\fontASize}{\fontASize}\fontspec{Garamond}}
+
+\def\fontBSize{28}
+\newcommand{\fontB}{\fontsize{\fontBSize}{\fontBSize}\fontspec{Garamond}}
+
+\def\fontCSize{32}
+\newcommand{\fontC}{\fontsize{\fontCSize}{\fontCSize}\fontspec{Garamond}}
+
+\def\fontDSize{18}
+\newcommand{\fontD}{\fontsize{\fontDSize}{\fontDSize}\fontspec{Garamond}}
+
+\def\fontESize{12}
+\newcommand{\fontE}{\fontsize{\fontESize}{\fontESize}\fontspec{Garamond}}
+
+\date{}
+\title{}
+\author{}
+
+
+% %%% HEADERS & FOOTERS
+% \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+% \pagestyle{fancy} % options: empty , plain , fancy
+% \renewcommand{\headrulewidth}{0pt} % customise the layout...
+% \lhead{\fontD{}www.meridianensemble.net}\chead{}\rhead{\fontD{}info@meridianensemble.net}
+% \lfoot{}\cfoot{}\rfoot{}
+
+
+
+\newcommand{\meridianEnsemble}{Meridian Ensemble} 
+
+
+\title{}
+\begin{document}
+%%% BORDER:
+\begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=3pt,rounded corners=15pt,double]
+        ($ (current page.north west) + (0.43in,-0.55in) $)
+        rectangle
+        ($ (current page.south east) + (-0.43in,0.55in) $);
+\end{tikzpicture}%
+% \hbox to \hsize{\hbox{\fontD{}www.meridianensemble.net}\hfil\hbox{\fontD{}info@meridianensemble.net}}
+\hbox to \hsize{\hbox{\fontD{}info@meridianensemble.net}\hfil\hbox{\fontD{}}}
+\vskip -0.1in%
+
+\hbox to \hsize{
+    % \vbox to 1.7in{%
+        % \vfill%
+        % \hbox{\pgfornament[height=1in]{103}}
+    % }%
+    \hfill
+    \vbox to 1.2in{%
+        \vfill%
+        \hbox{\pgfornament[height=2.3in]{160}}
+    }%
+}
+{\centering
+    \fontA{}MERIDIAN ENSEMBLE
+    \vskip 0.2in
+    \fontB{}presents
+    \vskip 0.2in
+    \rput[r](-3pt,3pt){\pgfornament[scale=.45]{72}}
+    \fontA{}Songs of Passion%
+    \rput[l](3pt,3pt){\pgfornament[scale=.45]{73}}\\
+    % \rput(0,0){\pgfornament[scale=.5]{85}}
+    \vskip 0.3in
+}
+\hbox to \hsize{%
+    \hfill%
+    \vbox{\hsize=6in
+        \begin{center}
+        \fontB{}Choral gems from Latvia, Russia, Spain, \hbox{Great Britain}, and the United States
+        \vskip 0.2in
+        % \fontB{}Passionately sung by 15 chamber singers    
+        \end{center}
+    }%
+    \hfill%
+}%
+\vfill%
+\begin{center}%
+\fontC{}\textbf{Yuly Kopkin, Artistic Director}%
+\end{center}%
+\vfill%
+% \hbox to \hsize{
+    % \vbox to 1in{%
+        % \vfill%
+        % \hbox{\pgfornament[height=1in]{103}}
+    % }%
+    % \hfill
+    % \vbox to 1in{%
+        % \vfill%
+        % \hbox{\pgfornament[height=1in]{160}}
+    % }%
+% }%
+\hbox to \hsize{%
+    \hbox to 3.4in{%
+        \vbox{%
+            \noindent\raggedright\fontD{}\textbf{Sunday, May 19, 2:00 PM}\par%
+            Saint Clement's Episcopal Church\linebreak%
+            1501 32nd Avenue South\linebreak%
+            Seattle, WA%
+            \vfil%
+        }%
+        \hfill%
+    }%
+    \hss%
+    \vrule width0.01in%
+    \hss%
+    \hbox to 3.4in{%
+        \vbox{%
+            \noindent\raggedright\fontD{}\textbf{Wednesday, May 22, 8:00 PM}\par%
+            Magnolia United Church of Christ\linebreak{}%
+            3555 West McGraw Street\linebreak{}%
+            Seattle, WA%
+            \vfil%
+        }%
+        \hfill%
+    }%
+}
+\vskip 0.3in
+\begin{center}
+% {\fontD{}Admission \textendash{} \$15}
+{\fontD{}Free admission; donations are welcome (suggested donation \$15).}
+\end{center}
+\vskip 0.0in
+% \hbox to \hsize {\hfil\pgfornament[scale=1]{89}\hfil}
+% \hrule height0.01in
+% \vskip 0.04in
+% \hbox to \hsize{%
+    % % \hbox to 2cm {\vbox{\pgfornament[height=2cm]{21}}}
+    % \hfill%
+    % \vbox to 0.8cm {\hsize=5in
+        % \fontE{}Meridian Ensemble is a 15-singer chamber choir.
+        % \vfil
+    % }%
+    % \hfill%
+    % % \hbox to 2cm {\vbox{\pgfornament[height=2cm]{23}}}
+% }
+% \hbox to \hsize{\hbox{\fontD{}www.meridianensemble.net}\hfil\hbox{\fontD{}info@meridianensemble.net}}
+%
+% \includegraphics{songs-of-passion.jpg}		
+\end{document}
