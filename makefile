@@ -1,6 +1,6 @@
 buildDirectory=build
 # buildDirectory:=$(shell mktemp --directory --dry-run)
-inputFile=poster.tex
+inputFile=program.tex
 texOutputFile=${buildDirectory}/$(notdir $(basename ${inputFile})).pdf
 #this is what TexStudio view by default.
 viewableOutputFile=$(basename ${inputFile}).pdf
