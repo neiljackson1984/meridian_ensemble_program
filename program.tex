@@ -20,7 +20,6 @@
 \usepackage{varwidth} 
 \usepackage{lettrine}
 \usepackage{parcolumns}
-\usepackage{polyglossia}
 % \usepackage{pbox} 
 \usetikzlibrary{calc}
 \pagestyle{empty}
@@ -183,6 +182,16 @@ I Had No Time To Hate\dotfill{}Nathan Howe, USA (1982\textendash\ )\linebreak
 Нам звезды кроткие сияли\dotfill{}Viktor Kalinnikov, Russia (1870\textendash1927)\linebreak
 (Nam zyvozdy krotkiye siyali)
 
+\begin{parcolumns}[rulebetween=true]{2}
+\colchunk{this is chunk 1 in column 1}
+\colchunk{this is chunk 1 in column 2}
+\colplacechunks
+\colchunk{this is chunk 2 in column 1}
+\colchunk{this is chunk 2 in column 2}
+\colplacechunks
+
+
+\end{parcolumns}
 
 
 
