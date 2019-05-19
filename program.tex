@@ -107,12 +107,12 @@
 }
 % \vskip 0.1in%
 % \hrule%
-\vfil
+\vskip 0.65in
 {\centering
     \fontA{}MERIDIAN ENSEMBLE
-    \vskip 0.2in
+    \vskip 0in
     \fontB{}presents
-    \vskip 0.2in
+    \vskip 0in
     \rput[r](-3pt,3pt){\pgfornament[scale=.45]{72}}
     \fontA{}Songs of Passion%
     \rput[l](3pt,3pt){\pgfornament[scale=.45]{73}}\\
@@ -133,8 +133,16 @@
 %
 % \vskip 0.2in
 % \hrule
-\vfil%
-\hbox to \hsize{
+\vfil
+\hbox to \hsize{%
+    \hbox to 0pt{%
+        \hskip 3.1in%
+        \vbox to 0pt {%
+            \vskip -4.9in%
+            \pgfornament[height=1.8in]{160}%
+            \vfilneg
+        }%
+    }%
     % \fbox{\begin{varwidth}[b]{8in}%
         % \pgfornament[height=2.3in]{160}%
         % \vskip 0pt
@@ -142,20 +150,17 @@
         % % \hrule height10pt width20pt depth0pt\relax\hss\relax\unskip\hskip 0pt minus 1fill %
     % \end{varwidth}}
     \hfil%
-    \hskip 6pt
     \begin{minipage}[b]{4.3in}\setlength{\parskip}{\medskipamount}
-        \hrule height7pt
+        % \hrule height2pt
         {\fontD{}\textbf{Dear Friends,}}
         \bigskip
         \lettrine[lines=2,loversize=0.25,findent=-2pt]{I}{} am beyond delighted to present Meridian Ensemble and our Songs of Passion. In this
         program we explore Passion and a special thrill that makes it such a powerful emotion.
         A state of intense, burning desire, Passion can be a trigger of incredible, fantastic
         accomplishments; it can also leave one scarred so deeply and longing to heal so
-        desperately. 
-
-        From overcoming hate and setting oneself on the path of love, from
+        desperately. From overcoming hate and setting oneself on the path of love, from
         rediscovering one’s voice and bursting in a new song, from separation by distance and
-        time to long-awaited reunion of the loved ones, \makebox{MERIDIAN ENSEMBLE} is excited to share
+        time to long-awaited reunion of the loved ones, \makebox{Meridian Ensemble} is excited to share
         with you a myriad of expressions of Passion through the beauty of chamber choral
         performance.
 
